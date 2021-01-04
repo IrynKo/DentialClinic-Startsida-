@@ -1,0 +1,552 @@
+:root{
+    --text-color: #626262;
+    --brand-color:#2BAAEC;
+    --titel-color:#363636;
+    --extra-color: #25E6C8; 
+   
+  }
+  body {
+    font-size: 'Roboto-Regular', sant-serif;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+  }
+  .list {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  h1, h2,h3, h4, h5, h6, p {
+   margin-bottom: 0;
+   margin-top: 0;
+  }
+  .container {
+     width: 100%;
+     padding-left: 15px;
+     padding-right: 15px;
+     margin-right: auto;
+     margin-left: auto;
+   }
+
+   
+ @media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+    /*border: steelblue solid 2px;
+  background-color: violet;*/
+    }}
+ @media screen and (min-width: 768px) {
+    .container {
+    width: 768px;
+   /* border: orange solid 2px;
+         background-color: rgb(130, 238, 188);*/
+          }
+    }
+ @media screen and (min-width: 1410px) {
+    .container {
+        width: 1410px;
+       border: olive solid 4px;
+          /* background-color: rgb(159, 130, 238);*/
+          }
+    }
+   /*------------------TOP&MAIN MENY-------------*/ 
+@media screen and (max-width: 767px) {
+    .top-meny{
+        display: none;
+    }
+    .main-meny {
+        visibility: hidden;
+    }}
+    @media screen and (min-width: 320px) {
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    .logo__image {
+        margin-right: 18px;
+    }
+    .logo-text__element {
+        font-size: 16px;
+        color: var(--text-color);
+    }
+    .brand-name{
+        font-size: 24px;
+        color: var(--titel-color);
+    }
+    .brand-name__element{
+        color: var(--brand-color);
+    }
+}
+@media screen and (min-width: 768px) {
+    .top-meny{
+        border-bottom: #111111 solid 1px ;
+    }
+    .top-meny .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .time-info {
+        display: flex;
+        margin: 0;
+        align-items: center;
+      } 
+      .social-icons__set:not(:last-child) {
+        margin-right: 24px;
+    
+      }
+      .clock-icon {
+        margin-right: 10px;
+      }
+      .time-info__text{
+        font-size: 14px;
+      }
+      
+      .social-icon__link {
+        fill: #2BAAEC;
+      }
+      .social-icon__link:hover {
+        fill: #25E6C8;
+      }
+      .social-icons {
+        display: flex;
+      }
+        .main-nav .container {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        padding-top: 50px;
+      }
+      .main-meny{
+        display: flex;
+      }
+      .main-meny__item {
+        font-size: 18px;
+        font-family: 'RobotoSlab-Regular', serif;
+      }
+      .main-meny__item:not(:last-child) {
+        margin-right: 18px;
+      }
+    }
+    /*-----------------------------HERO------------------------*/
+@media screen and (min-width: 320px) {
+    .hero {
+        padding-top: 10px;
+        margin-bottom: 86px;
+        padding-bottom: 20px;
+        background-color: #DEDEDE;
+      }
+    .hero__title {
+      font-family: 'RobotoSlab-Regular', serif;
+      margin-bottom: 32px;
+    
+      font-size: 40px;
+      color: var(--titel-color);
+    }
+    .hero__text{
+      font-size: 18px;
+      color: var(--text-color);
+      margin-bottom: 40px;
+    }
+    .hero__button {
+        padding: 14px 46px;
+        border: none;
+        background-color: var(--extra-color);
+        font-weight: 600;
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (min-width: 768px) {
+.hero .container{
+    display: flex;
+}
+.hero-image {
+  margin-right: 50px;
+}
+/*.hero__title {
+  margin-bottom: 62px;
+  font-size: 48px;
+  
+}*/
+}
+@media screen and (min-width: 1410px) {
+.hero-image {
+    width: 617px;
+    height: 680px;
+    margin-right: 152px;
+     margin-top: 21px;
+    }
+    .hero__title {
+    font-size: 60px;
+    margin-top: 177px;
+    margin-bottom: 40px;
+    }
+    .hero__button {
+     padding: 18px 56px;
+      }
+}
+/*----------------------COMPANY_DESCRIPTION-------------------------------*/
+@media screen and (min-width: 320px) {
+    .company-description__title {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 23px;
+        padding-bottom: 22px;
+      
+        font-family: 'RobotoSlab-Regular', serif;
+        font-size: 30px;
+        color: var(--titel-color);
+      }
+      .company-description__title::after {
+       content: "";
+       position: absolute;
+       display: block;
+       margin: 0 auto;
+       bottom: 0;
+       left: 0;
+       width: 110%;
+       height: 4px;
+       background-color: var(--extra-color);
+       /*border-radius: 2px;*/
+      }
+      .company-description__text{
+        font-size: 14px;
+        color: var(--text-color);
+      }
+      .company-description__text.first{
+        margin-bottom: 15px;
+      }
+      .company-description__text.second{
+        margin-bottom: 40px;
+      }
+      .company-advantages__list{
+        display: flex;
+        padding: 0;
+      }
+      .advantages-items:not(:last-child){
+        margin-right: 35px;
+      }
+      .advantages-items__number {
+        font-family: 'RobotoSlab-Regular', serif;
+        margin-bottom: 21px;
+      
+        font-size: 24px;
+        color: var(--brand-color);
+      }
+      .advantages-items__text {
+        font-size: 14px;
+        color:var(--titel-color);
+      }
+}
+
+@media screen and (min-width: 768px) {
+    .company-description{
+        display: flex;
+    }
+    .advantages-items__number {
+        font-size: 32px;
+      }
+      .advantages-items__text {
+        font-size: 16px;
+      }
+}
+@media screen and (min-width: 1410px) {
+    .company-description__image {
+        width: 473px;
+        height: 724px;
+      }
+      .company-description__main {
+        margin-right: 162px;
+        margin-top: 147px;
+      }
+      .company-description__title {
+        padding-bottom: 44px;
+        margin-bottom: 49px;
+    
+        font-size: 40px;
+      }
+      .company-description__text{
+        font-size: 18px;
+      }
+      .company-description__text.first{
+        margin-bottom: 20px;
+      }
+      .company-description__text.second{
+        margin-bottom: 80px;
+      }
+      .advantages-items:not(:last-child){
+        margin-right: 93px;
+      }
+      .advantages-items__number {
+        margin-bottom: 21px;
+    
+        font-size: 40px;
+      }
+      .advantages-items__text {
+        font-size: 18px;
+      }
+}
+
+/*---------------------------------SERVICES----------------------*/
+@media screen and (min-width: 320px) {
+    
+  .services {
+    padding-top: 22px;
+    background-color: #F7F7F7;
+  }
+  .services__title__block {
+    text-align: center;
+  }
+  .services__title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 123px;
+    padding-bottom: 22px;
+  
+    font-family: 'RobotoSlab-Regular', serif;
+    font-size: 30px;
+    color: var(--titel-color);
+  }
+  .services__title::after {
+  content: "";
+   position: absolute;
+   display: block;
+   margin: 0 auto;
+   bottom: 0;
+   left: 0;
+   width: 110%;
+   height: 4px;
+   background-color: var(--extra-color);
+   /*border-radius: 2px;*/
+  }
+  
+  .services-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /*margin-left: -10px;
+    margin-top: -10px;*/
+    padding: 0;
+    margin: 0;
+  }
+  .services-list__items {
+    margin-bottom: 100px;
+    width: calc(( 100% - 34px)/2);
+  }
+  .services-list__items:not(:nth-child(2n)) {
+    margin-right: 10px;
+  }
+  .icon-circle {
+    width: 80px;
+    height: 80px;
+    background-color: var(--extra-color);
+    border-radius: 50%;
+  }
+  
+  /*.services-list__items__title.icon {
+    position: relative;   
+  }
+  .services-list__items__title.icon::before {
+    content: "";
+    background-image: url(../images/implant.png);
+    background-size: 36px 61px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+   display: block;
+   top: -400%;
+    left: 30%;
+  background-color: var(--extra-color);
+   border-radius: 50%;
+  }
+  .services-list__items__title.icon.active {
+    position: relative;
+  }
+  .services-list__items__title.icon.active::before {
+    content: "";
+    background-image: url(../images/teeth.png);
+    background-size: 61px 60px;
+    top: -500%;
+    left: 30%;
+    background-color: #2BAAEC;
+  }*/
+ /* .services-list__items__icon{
+    display: block;
+    margin: 0 auto;
+  
+  }*/
+  .services-list__items__title {
+    text-align: center;
+    margin-bottom: 12px;
+  
+    font-family: 'RobotoSlab-Regular', serif;
+    font-size: 18px;
+    color:var(--titel-color);
+  }
+  .services-list__items__text{
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-color);
+  }
+ 
+  
+}
+
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 1410px) {
+    .services {
+        padding-top: 163px;
+        padding-bottom: 231px;
+      }
+      .services__title {
+        text-align: center;
+        padding-bottom: 30px;
+        margin-bottom: 325px;
+    
+        font-size: 40px;
+      }
+      .services__title__block {
+        text-align: center;
+      }
+      .icon-circle {
+        width: 120px;
+        height: 120px;
+      }
+      /*.services-list__items__title.icon {
+        position: relative;
+      }
+      .services-list__items__title.icon::before {
+        content: "";
+        background-size: 36px 61px;
+       /*  background-image: url(../images/implant.png);
+       background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+          display: block;
+         background-color: var(--extra-color);
+       border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        top: -700%;
+        left: 40%;
+      }
+      .services-list__items__title.icon.active {
+        position: relative;
+        
+      }
+      .services-list__items__title.icon.active::before {
+        content: "";
+        background-size: 61px 60px;
+        /*background-image: url(../images/teeth.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        display: block;
+          background-color: #2BAAEC;
+       border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        top: -700%;
+        left: 40%;
+      }*/
+      .services-list__items {
+        margin-bottom: 100px;
+        width: calc(( 100% - 136px)/3);}
+      .services-list__items__title {
+          text-align: center;
+          font-size: 22px;
+        }
+        .services-list__items {
+          margin-bottom: 354px;
+        }
+        .services-list__items:nth-last-child(-n+3) {
+          margin-bottom: 0;}
+
+        .services-list__items__text{
+          text-align: center;
+          font-size: 18px;
+        }
+        .services-list__items:not(:nth-child(3n)) {
+          margin-right: 20px;
+        }
+}
+
+/*---------------------------APPOINTMENT--------------------------*/
+@media screen and (min-width: 320px) {
+    .appointment .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+      }
+      
+      .appointment {
+        padding-top: 99px;
+        padding-bottom: 91px;
+        background-color: var(--brand-color);
+        opacity: 80%;
+      }
+      .appointment__text {
+        font-family: 'RobotoSlab-Regular', serif;
+        font-size: 24px;
+        text-align: center;
+      }
+      .appointment__button{
+        padding: 18px 48px 19px 48px;
+        background-color: #FFFFFF;
+        border: none;
+        border-radius: 8px;
+      
+        font-family: 'Roboto', serif;
+        font-weight: 600;
+        font-size: 14px;
+        color: var(--brand-color);
+      }
+}
+
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 1410px) {
+    .appointment__text {
+        font-size: 30px;
+      }
+      .appointment__button{
+        padding: 23px 56px 19px 57px;
+      
+        font-size: 18px;
+      }
+}
+/*--------------------------------FOOTER-----------------------------*/
+@media screen and (min-width: 320px) {
+    .footer {
+        background-color:var(--brand-color);
+        padding-top: 35px;
+        padding-bottom: 33px;
+      }
+      .footer__text{
+        text-align: center;
+      
+        font-size: 14px;
+        color: #F3FBFF
+
+      }
+}
+
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 1410px) {
+    .footer__text{
+        font-size: 16px;
+      }
+}
