@@ -50,6 +50,7 @@
         }
     }
    /*------------------TOP&MAIN MENY-------------*/ 
+
 @media screen and (max-width: 767px) {
     .top-meny{
         display: none;
@@ -217,6 +218,7 @@
       }
 }
 /*----------------------COMPANY_DESCRIPTION-------------------------------*/
+
 @media screen and (min-width: 320px) {
     .company-description {
       padding-top: 43px;
@@ -397,7 +399,7 @@
   height: 50%;
   width: auto;
 }
-.icon-circle:hover {
+.services-list__items:hover .icon-circle {
   background-color: var(--brand-color);
 }
 .services-list__items__icon.active {
@@ -477,12 +479,7 @@
 
 /*---------------------------APPOINTMENT--------------------------*/
 @media screen and (min-width: 320px) {
- /* .appointment .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }*/
-  
+ 
   .appointment {
     padding-top: 99px;
     padding-bottom: 91px;
@@ -492,7 +489,7 @@
   }
   
       .appointment__text {
-        margin-bottom: 15px;
+        margin-bottom: 32px;
         font-family: 'RobotoSlab-Regular', serif;
         font-size: 24px;
         text-align: center;
