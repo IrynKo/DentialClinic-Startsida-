@@ -71,7 +71,7 @@
     }
     .main-nav .container {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
     } 
     .logo {
         display: flex;
@@ -100,7 +100,7 @@
     }
     .top-meny .container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .time-info {
         display: flex;
@@ -132,7 +132,7 @@
       }
       .main-nav .container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         padding-bottom: 50px;
         padding-top: 50px;
@@ -399,6 +399,11 @@
   height: 50%;
   width: auto;
 }
+.services-list__items:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
 .services-list__items:hover .icon-circle {
   background-color: var(--brand-color);
 }
@@ -513,7 +518,13 @@
   .appointment .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+  .appointment__text {
+    margin-bottom: 0;
+  }
+  .appointment__button {
+    margin: 0;
   }
 }
 @media screen and (min-width: 1470px) {
